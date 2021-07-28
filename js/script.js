@@ -6,7 +6,8 @@ const root = new Vue({
             "./images/image2.jpg", 
             "./images/image3.jpg", 
             "./images/image4.jpg"
-        ]
+        ],
+        counter: 0,
     },
     methods: {
 
