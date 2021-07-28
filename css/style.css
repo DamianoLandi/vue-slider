@@ -7,3 +7,22 @@
 i {
     font-size: 100px;
 }
+
+.dot-container{
+    height: 50px;
+    width: 200px;
+    border-radius: 10px;
+    background-color: rgba(0,0,0,0.6);
+    bottom: 180px;
+}
+
+.dot{
+    height: 30px;
+    width: 30px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+.active{
+    background-color: dodgerblue;
+}

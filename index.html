@@ -14,8 +14,11 @@
     <div class="container-fluid" id="root">
         <div class="row">
             <div class="col-2 vh-100 d-flex justify-content-center align-items-center" @click="decreaseCounter"><i class="fas fa-angle-left"></i></div>
-            <div class="col-8 vh-100 d-flex justify-content-center align-items-center">
+            <div class="col-8 vh-100 d-flex justify-content-center align-items-center position-relative">
                 <img v-for="(image, index) in imgs" :src="image" v-show="index === counter" class="mw-100" alt="IMG">
+                <div class="dot-container position-absolute d-flex justify-content-around align-items-center">
+                    <div v-for="(dot, index) in imgs" class="dot"></div>
+                </div>
             </div>
             <div class="col-2 vh-100 d-flex justify-content-center align-items-center" @click="increaseCounter"><i class="fas fa-angle-right"></i></div>
         </div>
