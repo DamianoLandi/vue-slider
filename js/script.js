@@ -10,6 +10,19 @@ const root = new Vue({
         counter: 0,
     },
     methods: {
-
+        increaseCounter(){
+            if(this.counter === 3){
+                this.counter = 0;
+            }else{
+                this.counter++;
+            }
+        },
+        decreaseCounter(){
+            if(this.counter === 0){
+                this.counter = 3;
+            }else{
+                this.counter--;
+            }
+        }
     },
 });
