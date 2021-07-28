@@ -23,6 +23,16 @@ const root = new Vue({
             }else{
                 this.counter--;
             }
+        },
+        sendToIndex(i){
+            this.counter = i;
+        },
+        isSelected(i){
+            if(i === this.counter){
+                return "selected";
+            }else{
+                return "";
+            };
         }
     },
 });
